@@ -7,12 +7,14 @@
 <body>
 <script src="number_format.js"></script>
 <script>
-    console.log($numb.format('12000000',{
+    let options = {
         prefix:'Giá: ',
         suffix:' đ',
         thous:'.',
         dec:'3',
-    }));
+    };
+    console.log($numb.format('12000000',options));
+    console.log($numb.clear('Giá: 12.000.000 đ'));
 </script>
 </body>
 </html>
